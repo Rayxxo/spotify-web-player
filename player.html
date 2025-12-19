@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Welcome to the player</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <script src="https://sdk.scdn.co/spotify-player.js"></script>
+        
+    </head>
+    <body>
+        
+
+        <!-- Toggle Playlist -->
+        <button class="music-icon"><i class="fa-solid fa-music"></i></button>
+
+        <!-- Playlist Panel -->
+        <div class="playlist-panel" id="playlistPanel">
+            <h2 id="playlist-name">Playlist Name</h2>
+
+            <ul id="playlistTemplates">
+                <!-- Playlist items will be dynamically added here -->
+                <li class="playlistTemplates-item">
+                    <span class="album-art-placeholder"></span>
+                    <span class="track-name">Track Name</span>
+                    <span class="artist-name">Artist Name</span>
+                    <span class="album-name">Album Name</span>
+                    <span class="track-duration">Duration</span>
+                </li>
+            </ul>
+
+            <div class="resize-handle" id="resizeHandle"></div>
+            <ol id="playlistItems">
+                <!-- Playlist items will be dynamically added here -->
+                <li class="playlist-item">
+                    <span class="album-art">
+                        <img src="https://via.placeholder.com/50"/>
+                    </span>
+                    <span class="track-name">Track Name</span>
+                    <span class="artist-name">Artist Name</span>
+                    <span class="album-name">Album Name</span>
+                    <span class="track-duration">0:00</span>
+                </li>
+            </ol>
+
+        </div>
+
+        <!-- Progress Bar -->
+        <div id="playerWrapper" class="progressContainer">
+            <div class="player-bg">
+                <iframe
+                    src="https://www.youtube.com/embed/9XCyKtFsYbg?autoplay=1&mute=1&loop=1&playlist=9XCyKtFsYbg&controls=0"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                ></iframe>
+            </div>
+
+
+            <div class="playerContent">
+                <h1 id="song-name">Welcome, User</h1>
+
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill"></div>
+                    <div class="progress-bar-knob"></div>
+                </div>
+
+                <div class="time-display">
+                    <div id="currentTime">0:00</div>
+                    <div id="durationTime">0:00</div>
+                </div>
+
+                <div class="buttons">
+
+                    <!-- LEFT: SHUFFLE -->
+                    <div class="controls-left">
+                        <button id="shuffle">
+                        <i id="shuffleIcon" class="fa-solid fa-shuffle"></i>
+                        </button>
+                    </div>
+
+                    <!-- CENTER: TRANSPORT CONTROLS -->
+                    <div class="controls-center">
+                        <button id="prev">
+                            <i class="fa-solid fa-backward"></i>
+                        </button>
+
+                        <button id="playpause">
+                            <i id="playPauseIcon" class="fa-solid fa-play"></i>
+                        </button>
+
+                        <button id="next">
+                            <i class="fa-solid fa-forward"></i>
+                        </button>
+                    </div>
+
+                    <!-- RIGHT: VOLUME -->
+                    <div class="controls-right">
+                        <span class="volume-icon">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </span>
+
+                        <div class="volume-bar-container">
+                            <div class="volume-bar-fill"></div>
+                            <div class="volume-bar-knob"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script type="module" src="./Scripts/player.js" defer></script>
+        <script type="module" src="./Scripts/miniplayer.js" defer></script>
+    </body>
+</html>
