@@ -32,5 +32,5 @@ Future goals include:
 ## Notes
 This project was built as a learning experience to explore real-world API integration and UI state management.
 
-<img width="1007" height="1000" alt="image" src="https://github.com/user-attachments/assets/e7b673c5-b26e-47a8-9845-6d1432d48f99" />
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/e7b673c5-b26e-47a8-9845-6d1432d48f99" />
 
