@@ -22,5 +22,15 @@ A custom Spotify Web Playback SDK project built with vanilla HTML, CSS, and Java
 4. Serve locally (e.g. Live Server)
 5. Login and play music
 
+## Goals
+
+Future goals include:
+- Adding playlist selection and seamless switching within the UI
+- Enhancing visual feedback and animations tied to playback state
+- Exploring the possibility of recreating this project as a desktop application for Windows and a mobile application for supported platforms
+
 ## Notes
 This project was built as a learning experience to explore real-world API integration and UI state management.
+
+<img width="1007" height="1000" alt="image" src="https://github.com/user-attachments/assets/e7b673c5-b26e-47a8-9845-6d1432d48f99" />
+
